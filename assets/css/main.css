@@ -3855,7 +3855,18 @@ input, select, textarea {
 				-ms-flex-grow: 0;
 				flex-grow: 0;
 			}
-
+		#main > .posts > :first-child {
+				-moz-flex-shrink: 1;
+				-webkit-flex-shrink: 1;
+				-ms-flex-shrink: 1;
+				flex-shrink: 1;
+				-moz-flex-grow: 0;
+				-webkit-flex-grow: 0;
+				-ms-flex-grow: 0;
+				flex-grow: 1;
+				width: 100%;
+				
+			}
 			#main > .posts > * {
 				width: 50%;
 			}
@@ -3878,11 +3889,11 @@ input, select, textarea {
 				}
 
 				#main > .posts > article:nth-child(2n - 1) {
-					border-left-width: 0;
+					border-left-width: 2px;
 				}
 
 				#main > .posts > article:nth-child(-n + 2) {
-					border-top-width: 0;
+					border-top-width: 2px;
 				}
 
 			@media screen and (max-width: 980px) {
